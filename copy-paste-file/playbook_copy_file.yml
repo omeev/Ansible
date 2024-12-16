@@ -1,4 +1,8 @@
-- name: copy paste hello.sh file
+- hosts: all
+  become: yes
+
+  tasks:
+  - name: copy paste hello.sh file
   copy:
     src: /home/hello.sh
     dest: /usr/bin/
