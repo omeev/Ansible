@@ -1,4 +1,8 @@
-- name: remove httpd
-  yum:
-    name: httpd
-    status: absent
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: remove httpd
+      yum:
+        name: httpd
+        status: absent
