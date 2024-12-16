@@ -1,4 +1,4 @@
-- name: copy paste hello.sh file
+- name: copy paste hello.sh file from one server to another server
   copy:
     src: /home/hello.sh
     dest: /usr/bin/
