@@ -7,7 +7,6 @@ To execute the ansible scripts run a commands like
 for eg:   ansible-playbook -i hostfile playbook_copy_file.yml --check
 
 
-
 2) Execute the script to the server
 
    ansible-playbook -i <inventory_file> <playbook_file>
