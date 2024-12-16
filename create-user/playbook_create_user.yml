@@ -1,10 +1,6 @@
-- hosts: all
-  become: yes
-
-  tasks:
-    - name: create user wwwadm
-    user:
-      name: wwwadm
-      group: wwwadm
-      dest: /home/user1
-      state: present
+- name: create user wwwadm
+  user:
+    name: wwwadm
+    group: wwwadm
+    dest: /home/user1
+    state: present

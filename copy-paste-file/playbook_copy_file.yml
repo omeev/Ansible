@@ -1,11 +1,7 @@
-- hosts: all
-  become: yes
-
-  tasks:
-    - name: copy paste hello.sh file from one server to another server
-      copy:
-        src: /home/hello.sh
-        dest: /usr/bin/
-        owner: root
-        group: root
-        mode: 0644
+- name: copy paste hello.sh file
+  copy:
+    src: /home/hello.sh
+    dest: /usr/bin/
+    owner: root
+    group: root
+    mode: 0644
