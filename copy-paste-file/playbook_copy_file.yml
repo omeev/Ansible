@@ -1,0 +1,7 @@
+- name: copy paste hello.sh file
+  copy:
+    src: /home/hello.sh
+    dest: /usr/bin/
+    owner: root
+    group: root
+    mode: 0644
